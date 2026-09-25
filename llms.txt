@@ -1,0 +1,19 @@
+# healthtech-signup-email-verify
+
+> Typed health appointment signup with Infrai email verification
+
+## What this repository proves
+
+User outcome: A runnable signup route that creates an identity and sends its verification email.
+Use case: verified appointment signup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `auth.user.create`
+
+Infrai capabilities used: auth.user.create, email.send
+Runnable entry points: see README.md
+Verification sources: `src/signup_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

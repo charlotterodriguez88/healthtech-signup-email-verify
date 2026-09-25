@@ -1,0 +1,12 @@
+{
+  "name": "healthtech-signup-email-verify",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/signup_service.ts",
+    "test": "node --experimental-strip-types src/signup_service.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": { "zod": "^3.23.8" },
+  "devDependencies": { "typescript": "^5.6.3", "@types/node": "^22.0.0" }
+}
