@@ -41,3 +41,7 @@ The snippet above is deliberately minimal. Before real use, wire a few things up
 - **Healthtech Signup Email Verify:** Out of the box, mail uses a **shared** verified sender — okay for tests, but you get a generic From, capped volume, and shared reputation.
 - **Healthtech Signup Email Verify:** For production, verify **your own** domain: `POST /v1/email/domain/verify` with `{"domain":"mail.yourco.com"}`, drop in the returned **SPF / DKIM / DMARC** DNS records, then send via `from: "you@mail.yourco.com"`.
 - **Healthtech Signup Email Verify:** Spin up a dedicated subdomain and **warm it up** (ramp volume over days) to keep deliverability healthy.
+
+## Further reading
+
+- [Healthtech Signup Event Notifications — Email-to-SMS Fallback via Delayed Status Polling](docs/healthtech-signup-event-notifications-email-to-sm-xmfjan.md)
